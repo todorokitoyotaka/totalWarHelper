@@ -18,6 +18,7 @@ tags = [atk, buf, tank, debuf]
 owns = [data1, data4, data6, data7]
 needs  = [team1, team2]
 
+print("\n-------- NEEDS ------------")
 for team in needs:
     for chara in team:
         if chara["name"] in map(lambda x: x["name"], owns):
